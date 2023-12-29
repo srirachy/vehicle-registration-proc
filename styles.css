@@ -1,0 +1,87 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#4269aa, #efefd4);
+  background-repeat:no-repeat;
+  color: #efefd4;
+}
+
+/* colors */
+.text-chrome-white {
+  color: #efefd4;
+}
+
+.bg-chrome-white {
+  background-color: #efefd4;
+}
+
+.text-flat-blue {
+  color: #4269aa;
+}
+
+.bg-flat-blue {
+  background-color: #4269aa;
+}
+
+.text-dolphin {
+  color: #685987;
+}
+
+.bg-dolphin {
+  background-color: #685987;
+}
+
+.text-twilight-lavender {
+  color: #8f4964;
+}
+
+.bg-twilight-lavender {
+  background-color: #8f4964;
+}
+
+.text-dull-red {
+  color: #b63a42;
+}
+
+.bg-dull-red {
+  background-color: #b63a42;
+}
+
+/* nav */
+.nav-logo-img {
+  height: 2rem;
+}
+
+/* main */
+main {
+  min-height: 80vh;
+}
+
+.page-transparent {
+  background-color: rgba(36, 32, 30, .2);
+}
+
+.contact-icon {
+  width: 6.25rem;
+  height: 5.313rem;
+}
+
+/* footer */
+footer {
+  height: 3.75rem;
+  margin-top: auto;
+  background-color: rgba(36, 32, 30, .7);
+}
+
+.icons {
+  color: #4269aa;
+}
+
+.footer-content {
+  height: 3.75rem;
+}
+
+footer .icons:hover {
+  color: #ae866d;
+}
