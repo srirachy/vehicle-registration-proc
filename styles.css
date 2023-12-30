@@ -48,6 +48,27 @@ body {
   background-color: #b63a42;
 }
 
+/* buttons */
+.btn-twilight-lavender {
+  background-color: #8f4964;
+  color: #efefd4;
+}
+
+.btn-flat-blue {
+  background-color: #4269aa;
+  color: #efefd4;
+}
+
+.btn-twilight-lavender:hover,
+.btn-twilight-lavender:active,
+.btn-twilight-lavender:focus,
+.btn-flat-blue:hover,
+.btn-flat-blue:active,
+.btn-flat-blue:focus {
+  background-color: #efefd4;
+  color: #000;
+}
+
 /* nav */
 .nav-logo-img {
   height: 2rem;
@@ -65,6 +86,26 @@ main {
 .contact-icon {
   width: 6.25rem;
   height: 5.313rem;
+}
+
+/* login */
+.main-login {
+  width: 75vw;
+}
+
+@media (min-width: 1200px) {
+  .main-login {
+    width: 30vw;
+  }
+}
+
+.user-forgot {
+  text-decoration: underline;
+}
+
+.user-forgot:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* footer */

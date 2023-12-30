@@ -83,9 +83,44 @@
       </div>
     </nav>
   </header>
-  <main>
-    <div class="container">
-      <h1>Login</h1>
+  <main class="d-flex justify-content-center align-items-center mx-auto main-login my-md-5">
+    <div class="container border border-secondary page-transparent p-3">
+      <form class="d-flex flex-column ">
+        <h1>Sign In</h1>
+        <div class="form-group">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword"
+            placeholder="Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-flat-blue my-3">Login</button>
+      </form>
+      <div class="container d-flex flex-column justify-content-evenly align-items-center">
+        <span class="user-forgot mx-3">Forgot Email?</span>
+        <span class="user-forgot mx-3">Forgot Password?</span>
+      </div>
+      <div class="container d-flex flex-row justify-content-center align-items-center">
+        <hr class="w-25"><span class="mx-2">Or</span><hr class="w-25">
+      </div>
+      <!-- <div class="container"> -->
+        <a href="/registration.html" role="button" class="btn btn-twilight-lavender w-100" aria-pressed="true">
+          Create Account
+        </a>
+      
+      <!-- </div> -->
     </div>
   </main>
   <footer>
