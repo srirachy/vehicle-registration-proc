@@ -108,6 +108,17 @@ main {
   cursor: pointer;
 }
 
+/* register */
+.main-register {
+  width: 75vw;
+}
+
+@media (min-width: 1200px) {
+  .main-register {
+    width: 30vw;
+  }
+}
+
 /* footer */
 footer {
   height: 3.75rem;
