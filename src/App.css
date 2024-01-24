@@ -107,23 +107,23 @@ main {
 }
 
 #para-one {
-  background-image: url('/img/para-1.webp');
+  background-image: url('/public/img/para-1.webp');
 }
 
 #para-two {
-  background-image: url('/img/para-2.webp');
+  background-image: url('/public/img/para-2.webp');
 }
 
 #para-three {
-  background-image: url('/img/para-3.webp')
+  background-image: url('/public/img/para-3.webp')
 }
 
 #para-four {
-  background-image: url('img/para-4.webp');
+  background-image: url('/public/img/para-4.webp');
 }
 
 #para-five {
-  background-image: url('img/para-5.webp');
+  background-image: url('/public/img/para-5.webp');
 }
 
 .page-transparent {
