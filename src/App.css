@@ -169,12 +169,14 @@ main {
 /* footer */
 footer {
   height: 3.75rem;
+  width: 100%;
   margin-top: auto;
   background-color: rgba(36, 32, 30, .7);
+  bottom: 0;
 }
 
 .icons {
-  color: #4269aa;
+  color: #efefd4;
 }
 
 .footer-content {
