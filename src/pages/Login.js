@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react'; 
+import { useState } from 'react'; 
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import FormInput from "../components/FormInput";
 
 const Login = () => {
-  const [formObj, setFormObj] = useState({
-    email: '',
-    password: ''
+  const [inputFormObj, setInputFormObj] = useState({
+    inputEmail: '',
+    inputPassword: ''
   });
   // const [isRegistered, setIsRegistered] = useState(false);
   // const [errorMsg, setErrorMsg] = useState('');
@@ -22,7 +22,8 @@ const Login = () => {
     inputInfo: {
       inputType: "email",
       inputClass: "form-control",
-      inputId: "inputEmail",
+      inputName: "inputEmail",
+      inputId: "input-email",
       inputPlaceholder: "Enter email",
     },
   };
@@ -39,24 +40,29 @@ const Login = () => {
     inputInfo: {
       inputType: "password",
       inputClass: "form-control",
-      inputId: "inputPassword",
+      inputName: "inputPassword",
+      inputId: "input-password",
       inputPlaceholder: "Password",
     },
   };
 
-  const 
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(inputFormObj);
+  }
 
   return (
     <div className="d-flex justify-content-center align-items-center mx-auto main-login my-5">
       <div className="container border border-secondary page-transparent p-4">
         <form className="d-flex flex-column ">
           <h1>Sign In</h1>
-          <FormInput formObj={emailObj} />
-          <FormInput formObj={pwObj} />
+          <FormInput formObj={emailObj} onChange={(e) => setInputFormObj({...inputFormObj, [e.target.name]: e.target.value})}/>
+          <FormInput formObj={pwObj} onChange={(e) => setInputFormObj({...inputFormObj, [e.target.name]: e.target.value})}/>
           <Button
             btnType="submit"
             btnClass="btn btn-flat-blue my-3"
             btnContent="Login"
+            onClick={submitHandler}
           />
         </form>
         <div className="container d-flex flex-column justify-content-evenly align-items-center">

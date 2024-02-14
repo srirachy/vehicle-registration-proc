@@ -2,8 +2,9 @@ const FormInput = ({
   formObj: {
     divInfo: { divClass },
     labelInfo: { labelFor, labelClass, labelContent },
-    inputInfo: { inputType, inputClass, inputId, inputPlaceholder },
+    inputInfo: { inputType, inputClass, inputName, inputId, inputPlaceholder },
   },
+  onChange,
 }) => {
   return (
     <>
@@ -14,8 +15,10 @@ const FormInput = ({
         <input
           type={inputType}
           className={inputClass}
+          name={inputName}
           id={inputId}
           placeholder={inputPlaceholder}
+          onChange={onChange}
         />
       </div>
     </>
