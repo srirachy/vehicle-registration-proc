@@ -32,6 +32,8 @@ const NavBar = () => {
                 </Link>
               </li>
             </ul>
+          
+         
             <ul className="navbar-nav d-flex d-lg-none mt-2 mt-lg-0">
               <li>
                 <Link to="/support" className="nav-link">
@@ -172,7 +174,7 @@ const NavBar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link to="/preferences" className="nav-link">
+                <Link to="/userpreferences" className="btn">
                   Preferences
                 </Link>
               </li>
