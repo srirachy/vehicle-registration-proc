@@ -1,4 +1,4 @@
-const RegisterUser = () => {
+const SignUp = () => {
   return (
     <div className="d-flex justify-content-center align-items-center mx-auto main-register my-md-5">
       <div class="container border border-secondary page-transparent p-4">
@@ -47,4 +47,4 @@ const RegisterUser = () => {
   );
 };
 
-export default RegisterUser;
+export default SignUp;
