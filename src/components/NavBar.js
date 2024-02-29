@@ -33,7 +33,6 @@ const NavBar = () => {
               </li>
             </ul>
           
-         
             <ul className="navbar-nav d-flex d-lg-none mt-2 mt-lg-0">
               <li>
                 <Link to="/support" className="nav-link">

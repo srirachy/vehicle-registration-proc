@@ -8,22 +8,20 @@ import UserPreferences from './pages/UserPreferences';
 import Footer from './components/Footer';
 import './App.css';
 
-
-
 function App() {
   return (
     <>
-      <NavBar />
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/signup' element={<SignUp />} />
-          <Route path='/accountuser' element={<Accountuser />} />
-          <Route path='/userpreferences' element={<UserPreferences />} />
-        </Routes>
-      </main>
-      <Footer />
+      <div id='page-container'>
+        <NavBar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<SignUp />} />
+            <Route path='/accountuser' element={<Accountuser />} />
+            <Route path='/userpreferences' element={<UserPreferences />} />
+          </Routes>
+        <Footer />
+      </div>
     </>
   );
 }
